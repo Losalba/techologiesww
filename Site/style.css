@@ -1,0 +1,163 @@
+
+.grid{
+    
+    width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 0.4fr 3fr;
+    grid-template-rows: min-content min-content
+    auto min-content;
+    grid-template-areas:
+    'header header'
+    'nav nav'
+    'aside main'
+    'footer footer';
+    margin: 0;
+
+}
+
+footer {
+    
+    background-color: lightgrey;
+
+}
+
+main{
+
+    background-color: #55545438;
+
+}
+
+aside{
+    background-color: #377bc566;
+}
+
+nav {
+    
+    height: 4vh;
+    background-color: #376e86;
+
+}
+
+header{
+    background-color: #d3b33168;
+    border-bottom: 1px solid #27a39e;
+    height: 100%; 
+}
+
+header {grid-area: header;}
+nav {grid-area: nav;}
+aside {grid-area: aside;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+
+.container {
+    
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+
+}  
+
+
+header .container h1{
+    
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .container img {
+    
+    width: 4.7%;
+    height: 8%;
+    border-radius: 50%;
+
+}
+
+
+
+
+nav a {
+    
+    float: left;
+    line-height: 150%;
+    margin-top: 0.2%;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(237, 221, 221);
+    background-color: #0864c6e8;
+    margin-right: 2%;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+ 
+nav a:hover {
+    
+    background-color: #0f3359;
+  
+}
+  
+aside ul {
+    margin-top: 7%;
+    padding-left: 5%;
+}
+aside li {
+    margin-bottom: 7%;
+}
+
+.texta {
+    
+    font-family: Arial, sans-serif;
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    font-size: 140%; 
+    white-space: nowrap; 
+
+}
+
+.biotext {
+    
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+  
+.photosgallery {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+  
+.photosgallery img {
+    
+    width: 20%;
+    height: 20%;
+    margin: 1%;
+    
+
+}
+  
+
+
+
+.hidden {
+    
+    display: none;
+
+}
+  
